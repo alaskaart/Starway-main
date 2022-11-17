@@ -16,7 +16,6 @@ export function onInputSearch(event) {
     Notiflix.Notify.info('Please, type movie name');
     return;
   }
-  console.log(inputValue);
   filmsApi.setQuery(inputValue);
   filmsApi
     .getFilmsByQuery()
